@@ -1,0 +1,31 @@
+import Link from "next/link"
+import logo from '../../static/netflix-3.svg'
+import mynavbar from './navbar.module.css'
+
+export const Navbar = () => {
+    return (
+        <div className={mynavbar.mainDiv}>
+            <ul className={mynavbar.ul}>
+                {/* {/* <li><Link to='#home'>Home</Link></li> */}
+                <li style={{ boxSizing: 'content-box', overflow: 'hidden', height: '100%' }}>
+                    <img
+                        src='../../static/netflix-3.svg'
+                        alt="logo"
+                        width={120}
+                        height={30}
+                        style={{ height: '100 % ' }}
+                    />
+                </li>
+                <li><Link href='/'>Home</Link></li>
+                <li><a href="#tvshows">TV Shows</a></li>
+                <li><a href='#movies'>Movies</a></li>
+                <li><a href='#games'>Games</a></li>
+                <li><a href='#mylist'>My List</a></li>
+            </ul>
+            <div style={{ width: '100px', textAlign: 'right', color: 'white', marginRight: '10px', marginTop: '0px' }}>
+                <Link href="/register">Register</Link>
+            </div>
+        </div>
+    )
+
+}
