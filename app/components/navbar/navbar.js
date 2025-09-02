@@ -1,5 +1,5 @@
 import Link from "next/link"
-import logo from '../../static/netflix-3.svg'
+import logo from '@/static/netflix-3.svg'
 import mynavbar from './navbar.module.css'
 
 export const Navbar = () => {
@@ -9,7 +9,7 @@ export const Navbar = () => {
                 {/* {/* <li><Link to='#home'>Home</Link></li> */}
                 <li style={{ boxSizing: 'content-box', overflow: 'hidden', height: '100%' }}>
                     <img
-                        src='../../static/netflix-3.svg'
+                        src={logo.src}
                         alt="logo"
                         width={120}
                         height={30}
