@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Navbar } from "./components/navbar/navbar";
+import { Navbar } from "./components/navbar";
+import { Suspense } from "react";
 
 
 export default function RootLayout({
@@ -13,7 +14,9 @@ export default function RootLayout({
     <html>
       <body>
         <Navbar />
-        {children}
+        <main style={{ paddingTop: "4rem" }}>
+          {children}
+        </main>
       </body>
     </html>
   );

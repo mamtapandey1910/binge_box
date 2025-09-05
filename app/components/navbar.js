@@ -28,7 +28,7 @@ export const Navbar = () => {
             </div>
             <div style={{ width: '100px', textAlign: 'right', color: 'white', marginRight: '10px', marginTop: '0px' }}>
 
-                <Link href="/login">Sign In</Link>
+                <Link href="/auth/login">Sign In</Link>
             </div>
         </div>
     )

@@ -1,0 +1,42 @@
+.formDiv {
+    width: 30rem;
+    height: 70vh;
+    background-color: black;
+    margin: 2rem auto;
+    margin-top: 6rem;
+    color: white;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.submitButton {
+    width: 20rem;
+    height: 3rem;
+    background-color: red;
+    border-radius: 4px;
+
+}
+
+.submitButton:hover {
+    background-color: rgb(175, 35, 40);
+    cursor: pointer;
+}
+
+.inputClass {
+    border: 2px solid red;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 4px;
+    padding: 10px;
+
+}
+
+.register {
+    text-align: center;
+}
