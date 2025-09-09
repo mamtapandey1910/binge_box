@@ -21,7 +21,7 @@ export const Navbar = () => {
                     </li>
                     <li><Link href='/'>Home</Link></li>
                     <li><a href="#tvshows">TV Shows</a></li>
-                    <li><a href='#movies'>Movies</a></li>
+                    <li><Link href='/content/movies'>Movies</Link></li>
                     <li><a href='#games'>Games</a></li>
                     <li><a href='#mylist'>My List</a></li>
                 </ul>

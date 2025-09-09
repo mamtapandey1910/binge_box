@@ -6,7 +6,7 @@ import Image from "next/image";
 const Movies = () => {
     return (
         <div>
-            <Cards />
+            <Cards id={'dummyId'} />
         </div>
     )
 }
