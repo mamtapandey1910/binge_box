@@ -1,8 +1,8 @@
 name: Issue occured
 on: issues
 jobs:
-  issues-jobs:
+  output-info:
     runs-on: ubuntu-latest
     steps:
       - name: output issues
-        run: echo "${{github}}" | echo "hello world"
+        run: echo "${{toJSON(github)}}"
