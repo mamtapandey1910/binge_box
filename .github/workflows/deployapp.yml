@@ -11,5 +11,4 @@ jobs:
         with:
           - node-version: 24
       - name: install dependencies
-        run: npm ci
-        run: echo "hello world"
+        run: npm ci | echo "hello world"
