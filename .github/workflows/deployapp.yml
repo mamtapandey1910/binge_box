@@ -1,5 +1,8 @@
 name: deploy app
-on: workflow_dispatch
+on: 
+  pull_request:
+  type: [open, edited ]
+  workflow_dispatch:
 jobs:
   test-jobs:
     runs-on: ubuntu-latest
