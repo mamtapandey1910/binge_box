@@ -1,7 +1,7 @@
 name: deploy app
 on: workflow_dispatch
 jobs:
-  first job: 
+  test-jobs: 
     runs-on: ubuntu-latest
     steps:
       - name: print greeting
