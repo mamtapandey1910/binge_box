@@ -1,0 +1,7 @@
+name: Issue occured
+on: issues
+jobs:
+  - name: issue output
+    steps:
+      - name: output issues
+        run: echo "${{github}}"

@@ -1,10 +1,13 @@
 name: deploy app
 on: workflow_dispatch
-jobs:
-  test-jobs: 
-    runs-on: ubuntu-latest
-    steps:
-      - name: print greeting
-        run: echo "Hello World"
-      - name: print goodbye
-        run: echo 'bbye'
+jobs: 
+  runs-on: ubuntu-latest
+  steps:
+    - name: get codes
+      uses: actions/checkout@v3
+    - name: install node
+      uses: actions/setup-node@v3
+      with:
+        - node-version: 24
+    - name: install dependencies
+      run: npm ci
