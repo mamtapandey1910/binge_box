@@ -25,4 +25,14 @@ jobs:
         with:
           node-version: 24
       - name: install dependencies
-        run: npm i
+        run: |
+          npm i
+          npm run build
+      - name: upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: next-abstract
+          path:
+            .next
+          
+
