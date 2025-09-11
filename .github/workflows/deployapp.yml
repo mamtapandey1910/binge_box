@@ -38,6 +38,7 @@ jobs:
         run: ls
   deploy:
     need: test-jobs
+    runs-on: ubuntu-latest
     steps:
       - name: print deploy greetings
         run: echo "hello deploy"     
