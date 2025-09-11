@@ -33,7 +33,7 @@ jobs:
         with:
           name: next-abstract
           path:
-            .app
+            app
       - name: list artifact
         run: ls
           
