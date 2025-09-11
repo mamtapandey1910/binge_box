@@ -1,7 +1,8 @@
 name: Issue occured
 on: issues
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - name: output issues
-      run: echo "${{github}}"
+  issues-jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: output issues
+        run: echo "${{github}}"
