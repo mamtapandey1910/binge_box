@@ -37,7 +37,7 @@ jobs:
       - name: list artifact
         run: ls
   deploy:
-    need: test-jobs
+    needs: test-jobs
     runs-on: ubuntu-latest
     steps:
       - name: print deploy greetings
@@ -46,8 +46,8 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: next-abstract
-        path: 
-          app
+          path: 
+            app
       - name: log the downloaded artifact
         run: ls
 
