@@ -1,7 +1,7 @@
 name: deploy app
 on: 
   pull_request:
-   - type: [open, edited ]
+   - types: [opened, edited ]
   workflow_dispatch:
 jobs:
   test-jobs:
