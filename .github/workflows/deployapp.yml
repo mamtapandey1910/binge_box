@@ -1,0 +1,7 @@
+name: deploy app
+on: workflow_dispatch
+jobs:
+  first_job: first job
+  runs: ubuntu-latest
+  name: print greeting
+  run: echo "Hello World"
