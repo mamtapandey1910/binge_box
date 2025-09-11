@@ -36,5 +36,17 @@ jobs:
             app
       - name: list artifact
         run: ls
-          
+  deploy:
+    need: test-jobs
+    steps:
+      - name: print deploy greetings
+        run: echo "hello deploy"     
+      - name: download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: next-abstract
+        path: 
+          app
+      - name: log the downloaded artifact
+        run: ls
 
