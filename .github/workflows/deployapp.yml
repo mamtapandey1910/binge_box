@@ -9,6 +9,6 @@ jobs:
       - name: install node
         uses: actions/setup-node@v3
         with:
-          - node-version: 24
+          node-version: 24
       - name: install dependencies
         run: npm ci
