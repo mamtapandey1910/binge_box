@@ -46,7 +46,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print deploy greetings
-        run: echo "hello deploy"  
+        run: echo "hello deploy" 
+      - name: get code
+        uses: actions/checkout@v3
+      - name: install node
+        uses: actions/setup-node@v3 
       - name: dependency caching
         uses: actions/cache@v4
         with:
