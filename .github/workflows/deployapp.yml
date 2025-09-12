@@ -31,11 +31,11 @@ on:
           - dev
           - prod
           - qa
-  push:
-    branches:
-      - main
-      - dev-*
-      - feature/**
+  # push:
+  #   branches:
+  #     - main
+  #     - dev-*
+  #     - feature/**
 
 jobs:
   test-jobs:

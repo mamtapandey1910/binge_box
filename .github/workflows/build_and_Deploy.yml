@@ -21,8 +21,9 @@ on :
 
 
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    build:
-      - name: greetings
-        run: echo "hello world"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      build:
+        - name: greetings
+          run: echo "hello world"
