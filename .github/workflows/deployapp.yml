@@ -12,13 +12,16 @@ on:
       branch:
         description: branch workflow
         required: true
-        type: |
-          string
+        type:
           choice
         options:
           - main
           - dev
           - feature/new-feature
+      custom_branch:
+        description: custom branch
+        required: false
+        type: string
       environment:
         descriptions: enviroment select
         required: true
