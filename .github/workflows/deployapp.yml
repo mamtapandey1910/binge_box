@@ -12,7 +12,9 @@ on:
       branch:
         description: branch workflow
         required: true
-        type: string
+        type: |
+          string
+          choice
         options:
           - main
           - dev
