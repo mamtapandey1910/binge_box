@@ -1,0 +1,28 @@
+name: Build and deploy
+on : 
+  workflow_dispatch:
+    input:
+      branch:
+          name: workflow branch
+          type: choice
+          required: true
+          options:
+            - main
+            - dev
+
+      env:
+        - name: environment
+          type: choice
+          required: true
+          options:
+            - prod
+            - dev
+            - qa
+
+steps:
+  runs-on: ubuntu-latest
+
+  jobs:
+    build:
+      - name: greetings
+        run: echo "hello world"
