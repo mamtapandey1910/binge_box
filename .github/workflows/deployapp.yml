@@ -24,6 +24,11 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 24
+      - name: dependency caching
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: deps-node-modules-${{hashFunction("**/package-lock.json")}}
       - name: install dependencies
         run: |
           npm i
@@ -41,7 +46,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print deploy greetings
-        run: echo "hello deploy"     
+        run: echo "hello deploy"  
+      - name: dependency caching
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: deps-node-modules-${{hashFunction("**/package-lock.json")}}
+      - name: install dependencies
+        run: npm i
       - name: download artifact
         uses: actions/download-artifact@v4
         with:
