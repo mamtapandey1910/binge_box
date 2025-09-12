@@ -8,6 +8,24 @@ on:
       - dev-*
       - feature/**
   workflow_dispatch:
+    inputs:
+    branch:
+      description: branch workflow
+      required: true
+      type: choice
+      options:
+        - main
+        - dev
+        - feature/new-feature
+    environment:
+      descriptions:
+      required: true
+      default: dev
+      type: choice
+      options:
+        - dev
+        - prod
+        - qa
   push:
     branches:
       - main
