@@ -24,6 +24,5 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      build:
         - name: greetings
           run: echo "hello world"
