@@ -19,10 +19,10 @@ on :
             - dev
             - qa
 
-steps:
-  runs-on: ubuntu-latest
 
-  jobs:
+jobs:
+  runs-on: ubuntu-latest
+  steps:
     build:
       - name: greetings
         run: echo "hello world"
