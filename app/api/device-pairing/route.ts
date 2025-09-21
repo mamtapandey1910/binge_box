@@ -7,7 +7,6 @@ export const GET = async (req: any) => {
         userCode,
         expireAt: new Date(Date.now() + 5 * 60 * 1000)
     }
-    console.log(code)
     return new Response(JSON.stringify(code), {
         status: 200,
         headers: { 'Content-type': 'application/json' }

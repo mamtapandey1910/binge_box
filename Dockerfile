@@ -11,10 +11,11 @@ RUN apt-get install -y nodejs ffmpeg
 
 WORKDIR /app
 
-COPY . /app
+COPY . .
 
 RUN npm install
 
+RUN npm run build
 
 EXPOSE 3000
 

@@ -1,8 +1,7 @@
 const APP_ENDPOINT = "http://127.0.0.1:8000"
 
 const Register = async () => {
-    // const data = await fetch(`${APP_ENDPOINT}/user/register`)
-    // console.log(data)
+
     return (<>
         <div>
             <h1>Hello I am a Register page</h1>
