@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from "react"
 import shakaPlayer from "shaka-player"
 
-const movieDetailsPage = ({ movie, id }) => {
+const movieDetailsPage = ({ id }) => {
     const [isPlaying, setIsPlaying] = useState(false)
     const playerRef = useRef(null)
     const videoRef = useRef(null)
@@ -51,4 +51,4 @@ const movieDetailsPage = ({ movie, id }) => {
 }
 
 
-export default movieDetailsPage
+movieDetailsPage
