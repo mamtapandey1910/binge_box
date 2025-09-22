@@ -29,8 +29,7 @@ const movieDetailsPage = ({ id }) => {
         videoRef.current.play()
     }
 
-    // const handlePlayerControls = (e) => 
-    // }
+
 
     return (
         <div>
@@ -51,4 +50,4 @@ const movieDetailsPage = ({ id }) => {
 }
 
 
-movieDetailsPage
+export default movieDetailsPage
